@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.section {
+  min-height: 50vh;
+  padding: 2rem 1rem;
+}
