@@ -3,6 +3,40 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  /* Colors */
+
+  --color-forest: #1f3a2e;
+  --color-moss: #4a6b53;
+  --color-sage: #a3b8a0;
+  --color-cream: #f4f1ea;
+  --color-ink: #161a17;
+  --color-accent: #c9a15a;
+
+  /* Typography */
+  --font-family-heading: "Fraunces", serif;
+  --font-family-body: "Inter", sans-serif;
+
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 3rem;
+  --font-size-4xl: 4rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Size */
+
+  --size-xs: 0.5rem;
+  --size-sm: 1rem;
+  --size-md: 1.5rem;
+  --size-lg: 2rem;
+  --size-xl: 2.5rem;
+}
 
 * {
   margin: 0;
@@ -10,19 +44,70 @@
 }
 
 body {
-  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-family-body);
   line-height: 1.5;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
 }
 
 .nav {
   position: sticky;
   top: 0;
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
+  gap: var(--size-sm);
+  padding: var(--size-sm);
+  background-color: var(--color-forest);
 }
 
 .section {
   min-height: 50vh;
-  padding: 2rem 1rem;
+  padding: var(--size-l) var(--size-sm);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-heading);
+  color: var(--color-forest);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+.footer {
+  background-color: var(--color-forest);
+  color: var(--color-cream);
+  padding: var(--size-sm);
+}
+
+.nav a {
+  color: var(--color-cream);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--color-sage);
+}
+
+a {
+  color: var(--color-moss);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-forest);
 }
