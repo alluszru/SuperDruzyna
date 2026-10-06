@@ -61,7 +61,7 @@ body {
 
 .section {
   min-height: 50vh;
-  padding: var(--size-l) var(--size-sm);
+  padding: var(--size-lg) var(--size-sm);
 }
 
 h1,
@@ -110,4 +110,14 @@ a {
 
 a:hover {
   color: var(--color-forest);
+}
+
+.langButton {
+  background-color: var(--color-forest);
+  border: none;
+  color: var(--color-cream);
+}
+
+.langButton:hover {
+   color: var(--color-sage);
 }
