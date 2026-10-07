@@ -121,3 +121,61 @@ a:hover {
 .langButton:hover {
    color: var(--color-sage);
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-xl);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.heroText {
+  flex: 1;
+}
+
+.heroLogo {
+  width: 40%;
+  max-width: 400px;
+}
+
+.hero h1 {
+  line-height: 1.1;
+  margin-bottom: var(--size-sm);
+}
+
+.hero p {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--size-lg);
+}
+
+.heroButton {
+  display: inline-block; 
+  padding: var(--size-sm) var(--size-lg);
+  background-color: var(--color-forest);
+  color: var(--color-cream);
+  border-radius: 999px;
+  font-weight: var(--font-weight-medium);
+  transition: background-color 0.2s;
+}
+
+.heroButton:hover{
+  color: var(--color-cream);
+  background-color: var(--color-moss);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .heroLogo {
+    width: 60%;
+  }
+
+  .hero h1{
+    font-size: var(--font-size-2xl);
+  }
+}
