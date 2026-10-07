@@ -9,13 +9,13 @@ import LanguageContext from "./sections/LanguageContext";
 function App() {
   return (
     <>
-      <LanguageContext >
+      <LanguageContext>
         <Nav />
         <main>
-          <Hero />
-          <About />
-          <Services />
-          <Contact />
+            <Hero />
+            <About />
+            <Services />
+            <Contact />
         </main>
         <Footer />
       </LanguageContext>

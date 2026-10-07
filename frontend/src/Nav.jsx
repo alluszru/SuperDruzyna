@@ -20,6 +20,7 @@ function Nav() {
 
   return (
     <nav className="nav">
+      <div className="container navInner">
       <a className="navLogo" href="#home">
         <img src={logoText} alt="Super Drużyna" />
       </a>
@@ -35,6 +36,7 @@ function Nav() {
         <button className="langButton" onClick={changeLanguage}>
           {languageLabel}
         </button>
+      </div>
       </div>
     </nav>
   );

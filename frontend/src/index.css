@@ -51,16 +51,24 @@ body {
 }
 
 .nav {
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
-  display: flex;
-  gap: var(--size-sm);
   padding: var(--size-sm);
   background-color: var(--color-forest);
 }
 
+.navInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--size-sm);
+}
+
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
 .section {
   min-height: 50vh;
   padding: var(--size-lg) var(--size-sm);
@@ -149,8 +157,6 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: var(--size-xl);
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
 .heroText {
@@ -188,7 +194,7 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .nav {
+  .navInner {
     flex-wrap: wrap;
   }
 
