@@ -1,23 +1,41 @@
+import {useState} from "react";
 import { useLanguage } from "./sections/LanguageContext";
 import translations from "./translations";
-  
-function Nav() {
+import logoText from "./assets/logo-text.png";
 
-  const {language, setLanguage} = useLanguage();
-  const t = translations[language]
+
+function Nav() {
+  const { language, setLanguage } = useLanguage();
+  const t = translations[language];
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const languageLabel = language === "pl" ? "EN" : "PL";
   function changeLanguage() {
-    setLanguage(language === "pl" ? "en" : "pl")
+    setLanguage(language === "pl" ? "en" : "pl");
+  }
+
+  function closeMenu() {
+    setMenuOpen(false);
   }
 
   return (
     <nav className="nav">
-        <a href="#home">{t.nav.home}</a>
-        <a href="#about">{t.nav.about}</a>
-        <a href="#services">{t.nav.services}</a>
-        <a href="#contact">{t.nav.contact}</a>
-        <button className="langButton" onClick={changeLanguage}>{languageLabel}</button>
+      <a className="navLogo" href="#home">
+        <img src={logoText} alt="Super Drużyna" />
+      </a>
+      <button className="menuButton"
+      onClick={() => setMenuOpen(!menuOpen)}
+      aria-label="menu"
+      aria-expanded={menuOpen}>{menuOpen ? "✕" : "☰"}</button>
+      <div className={menuOpen ? "navLinks open" : "navLinks"}>
+        <a href="#home" onClick={closeMenu}>{t.nav.home}</a>
+        <a href="#about" onClick={closeMenu}>{t.nav.about}</a>
+        <a href="#services" onClick={closeMenu}>{t.nav.services}</a>
+        <a href="#contact" onClick={closeMenu}>{t.nav.contact}</a>
+        <button className="langButton" onClick={changeLanguage}>
+          {languageLabel}
+        </button>
+      </div>
     </nav>
   );
 }
