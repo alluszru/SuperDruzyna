@@ -1,8 +1,10 @@
 import { useLanguage } from "./sections/LanguageContext";
+import translations from "./translations";
   
 function Nav() {
 
   const {language, setLanguage} = useLanguage();
+  const t = translations[language]
 
   const languageLabel = language === "pl" ? "EN" : "PL";
   function changeLanguage() {
@@ -11,11 +13,10 @@ function Nav() {
 
   return (
     <nav className="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">{t.nav.home}</a>
+        <a href="#about">{t.nav.about}</a>
+        <a href="#services">{t.nav.services}</a>
+        <a href="#contact">{t.nav.contact}</a>
         <button className="langButton" onClick={changeLanguage}>{languageLabel}</button>
     </nav>
   );
