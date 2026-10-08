@@ -225,7 +225,52 @@ a:hover {
   margin-bottom: var(--size-lg);
 }
 
+.teamPhoto {
+  width: 70%;
+  aspect-ratio: 1; 
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transition: border-radius 0.6s ease;
+  object-fit: cover;
+}
 
+.teamCard:nth-child(3n + 2) .teamPhoto {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.teamCard:nth-child(3n + 3) .teamPhoto {
+  border-radius: 50% 50% 40% 60% / 60% 40% 60% 40%;
+}
+
+.teamCard:hover .teamPhoto {
+  border-radius: 50%;
+}
+
+
+.team h3 {
+  margin-bottom: var(--size-md);
+}
+
+.teamList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--size-lg);
+}
+
+.teamCard {
+  text-align: center;
+}
+
+.teamBreed {
+  color: var(--color-moss);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--size-xs);
+}
+
+.teamTagline {
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--size-xs);
+}
 
 @media (max-width: 768px) {
   .navInner {
@@ -284,6 +329,7 @@ a:hover {
     text-align: justify;
     order: 3;
   }
+
 
 
 }
