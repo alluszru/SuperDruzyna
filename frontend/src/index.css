@@ -43,6 +43,11 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+} 
+
 body {
   font-family: var(--font-family-body);
   line-height: 1.5;
@@ -193,6 +198,35 @@ a:hover {
   background-color: var(--color-moss);
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-xl);
+}
+
+.about h2 {
+  margin-bottom:var(--font-size-sm);
+}
+
+.aboutPhoto {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 50%;
+  padding: var(--size-xs);
+  border: solid var(--size-xs) var(--color-forest);
+  aspect-ratio: 1;
+  object-fit: cover;
+} 
+
+.about p {
+  text-align: justify;
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--size-lg);
+}
+
+
+
 @media (max-width: 768px) {
   .navInner {
     flex-wrap: wrap;
@@ -215,7 +249,7 @@ a:hover {
   }
 
   .hero {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
   }
 
@@ -226,5 +260,31 @@ a:hover {
   .hero h1{
     font-size: var(--font-size-2xl);
   }
+
+    .about {
+    flex-direction: column;
+    gap: var(--size-sm);
+  }
+
+  .aboutText {
+    display: contents;
+  }
+
+  .about h2 {
+    order: 1;
+    margin-bottom: var(--size-sm);
+  }
+
+   .aboutPhoto {
+    width: 60%;
+    order: 2;
+  }
+
+    .about p {
+    text-align: justify;
+    order: 3;
+  }
+
+
 }
 

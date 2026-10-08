@@ -9,6 +9,7 @@ function Hero() {
   return (
     <section id="home" className="section">
       <div className="container hero">
+        <img className="heroLogo" src={logo} alt="Super Drużyna" />
         <div className="heroText">
           <h1>{t.hero.title}</h1>
           <p>{t.hero.subtitle}</p>
@@ -16,7 +17,7 @@ function Hero() {
             {t.hero.cta}
           </a>
         </div>
-        <img className="heroLogo" src={logo} alt="Super Drużyna" />
+      
       </div>
     </section>
   );
