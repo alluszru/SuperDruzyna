@@ -67,6 +67,9 @@ const translations = {
       instagramText: "Treningi, zawody i codzienność naszej drużyny.",
       instagramCta: "Obserwuj na Instagramie", 
     },
+    footer: {
+      rights: "Wszelkie prawa zastrzeżone.",
+    },
   },
   en: {
     nav: {
@@ -129,12 +132,15 @@ const translations = {
     },
       contact: {
       title: "Contact",
-      text: "The quickest way to reach me is on Instagram – send me a message, I'll reply and we'll book your first meeting.",
+      text: "The quickest way to reach me is on Instagram - send me a message, I'll reply and we'll book your first meeting.",
       cta: "Message me on Instagram",
       mapTitle: "Where do we train?",
       instagramCta: "Follow us on Instagram",
       instagramTitle: "Find us on Instagram",
        instagramText: "Training, competitions and everyday life of our team."
+    },
+    footer: {
+      rights: "All rights reserved.",
     },
   },
 };
