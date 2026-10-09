@@ -22,6 +22,25 @@ const translations = {
       intro: "Każdy trening jest indywidualny - dopasowany do Ciebie i Twojego psa.",
       cta: "Umów się",
       location: "📍 Treningi odbywają się w Woli Karczewskiej.",
+      sportsTitle: "Co trenujemy?",
+      sports: [
+        {
+          name: "Obedience",
+          text: "Posłuszeństwo w wersji sportowej: chodzenie przy nodze, przywołanie, pozycje na odległość, aportowanie. Liczy się precyzja i radość ze wspólnej pracy.",
+        },
+        {
+          name: "Dummy",
+          text: "Aportowanie dummy, czyli płóciennych worków, inspirowane pracą psów myśliwskich - ale bez zwierzyny. Pies uczy się zapamiętywać miejsca upadku i słuchać kierunków na odległość.",
+        },
+        {
+          name: "Nosework",
+          text: "Sport węchowy: pies szuka ukrytych zapachów w pudełkach, pomieszczeniach, na zewnątrz i w pojazdach. Świetny dla każdego psa - buduje pewność siebie i spokój.",
+        },
+        {
+          name: "Frisbee",
+          text: "Rzuty i łapanie dysków - na odległość albo w efektownym freestyle'u. Dynamiczny sport dla psów, które kochają ruch.",
+        },
+      ],
        offers: [
         {
           featured: true,
@@ -61,6 +80,25 @@ const translations = {
       intro: "Every session is one-to-one - tailored to you and your dog.",
       cta: "Book now",
       location: "📍 Training takes place in Wola Karczewska.",
+      sportsTitle: "What do we train?",
+      sports: [
+        {
+          name: "Obedience",
+          text: "Obedience as a sport: heelwork, recalls, positions at a distance, retrieving. It's all about precision - and the joy of working together.",
+        },
+        {
+          name: "Dummy",
+          text: "Retrieving dummies - canvas bags - inspired by gundog work, but without game. The dog learns to mark where they fall and to take directions at a distance.",
+        },
+        {
+          name: "Nosework",
+          text: "A scent sport: the dog searches for hidden odours in boxes, rooms, outdoors and in vehicles. Great for any dog - it builds confidence and calm.",
+        },
+        {
+          name: "Frisbee",
+          text: "Throwing and catching discs - for distance or in a spectacular freestyle. A dynamic sport for dogs who love to move.",
+        },
+      ],
       offers: [
         {
           featured: true,

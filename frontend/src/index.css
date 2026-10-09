@@ -344,6 +344,43 @@ a:hover {
   color: var(--color-moss);
 }
 
+.sportsTitle {
+  margin-top: var(--size-xl);
+  margin-bottom: var(--size-sm);
+}
+
+.sport {
+  border-bottom: 1px solid var(--color-sage);
+}
+
+.sport summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--size-sm) 0;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-forest);
+  cursor: pointer;
+  list-style: none;
+}
+
+.sport summary::-webkit-details-marker {
+  display: none;
+}
+
+.sport summary::after {
+  content: "+";
+  font-size: var(--font-size-xl);
+}
+
+.sport[open] summary::after {
+  content: "−";
+}
+
+.sport p {
+  padding-bottom: var(--size-sm);
+}
+
 @media (max-width: 768px) {
   .navInner {
     flex-wrap: wrap;

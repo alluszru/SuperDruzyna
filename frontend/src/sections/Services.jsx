@@ -21,6 +21,17 @@ function Services() {
             </li>
           ))}
         </ul>
+        <h3 className="sportsTitle">{t.services.sportsTitle}</h3>
+        <div className="sportsList">
+          {t.services.sports.map((sport) => (
+            <details className="sport" name="sports" key={sport.name}>
+              <summary>{sport.name}</summary>
+              <p>{sport.text}</p>
+            </details>
+          ))}
+        </div>
+
+      
         <p className="servicesLocation">{t.services.location}</p>
       </div>
     </section>
