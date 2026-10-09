@@ -46,7 +46,7 @@
 html {
   scroll-padding-top: 80px;
   scroll-behavior: smooth;
-} 
+}
 
 body {
   font-family: var(--font-family-body);
@@ -69,8 +69,7 @@ body {
   gap: var(--size-sm);
 }
 
-
-.container{
+.container {
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -118,8 +117,8 @@ h4 {
   color: var(--color-sage);
 }
 
-.navLogo img{
-  display: block; 
+.navLogo img {
+  display: block;
   height: 48px;
   filter: brightness(0) invert(1);
 }
@@ -131,8 +130,8 @@ h4 {
 }
 
 .menuButton {
-  display: none; 
-  background: none; 
+  display: none;
+  background: none;
   border: none;
   color: var(--color-cream);
   font-size: var(--font-size-xl);
@@ -154,7 +153,7 @@ a:hover {
 }
 
 .langButton:hover {
-   color: var(--color-sage);
+  color: var(--color-sage);
 }
 
 .hero {
@@ -184,7 +183,7 @@ a:hover {
 }
 
 .heroButton {
-  display: inline-block; 
+  display: inline-block;
   padding: var(--size-sm) var(--size-lg);
   background-color: var(--color-forest);
   color: var(--color-cream);
@@ -193,7 +192,7 @@ a:hover {
   transition: background-color 0.2s;
 }
 
-.heroButton:hover{
+.heroButton:hover {
   color: var(--color-cream);
   background-color: var(--color-moss);
 }
@@ -206,7 +205,7 @@ a:hover {
 }
 
 .about h2 {
-  margin-bottom:var(--font-size-sm);
+  margin-bottom: var(--font-size-sm);
 }
 
 .aboutPhoto {
@@ -217,7 +216,7 @@ a:hover {
   border: solid var(--size-xs) var(--color-forest);
   aspect-ratio: 1;
   object-fit: cover;
-} 
+}
 
 .about p {
   text-align: justify;
@@ -227,7 +226,7 @@ a:hover {
 
 .teamPhoto {
   width: 70%;
-  aspect-ratio: 1; 
+  aspect-ratio: 1;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   transition: border-radius 0.6s ease;
   object-fit: cover;
@@ -244,7 +243,6 @@ a:hover {
 .teamCard:hover .teamPhoto {
   border-radius: 50%;
 }
-
 
 .team h3 {
   margin-bottom: var(--size-md);
@@ -272,12 +270,86 @@ a:hover {
   margin-bottom: var(--size-xs);
 }
 
+.services h2 {
+  margin-bottom: var(--size-sm);
+}
+
+.offerList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--size-lg);
+}
+
+.offerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--size-sm);
+  padding: var(--size-lg);
+  border: 2px solid var(--color-sage);
+  border-radius: 16px;
+}
+
+.offerCard.featured {
+  background-color: var(--color-forest);
+  border-color: var(--color-forest);
+  color: var(--color-cream);
+}
+
+.offerCard.featured h3 {
+  color: var(--color-cream);
+}
+
+.offerCard.featured .offerDetails {
+  color: var(--color-sage);
+  font-size: var(--font-size-lg);
+}
+
+.offerCard.featured .heroButton {
+  background-color: var(--color-cream);
+  color: var(--color-forest);
+}
+
+.offerCard.featured .heroButton:hover {
+  background-color: var(--color-sage);
+  color: var(--color-forest);
+}
+
+.offerBadge {
+  background-color: var(--color-accent);
+  color: var(--color-ink);
+  padding: var(--size-xs) var(--size-sm);
+  border-radius: 999px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.offerCard .heroButton {
+  margin-top: auto;
+}
+
+.offerDetails {
+  color: var(--color-moss);
+  font-weight: var(--font-weight-bold);
+}
+
+.servicesIntro {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--size-lg);
+}
+
+.servicesLocation {
+  margin-top: var(--size-lg);
+  color: var(--color-moss);
+}
+
 @media (max-width: 768px) {
   .navInner {
     flex-wrap: wrap;
   }
 
-  .menuButton{
+  .menuButton {
     display: block;
   }
 
@@ -302,11 +374,11 @@ a:hover {
     width: 60%;
   }
 
-  .hero h1{
+  .hero h1 {
     font-size: var(--font-size-2xl);
   }
 
-    .about {
+  .about {
     flex-direction: column;
     gap: var(--size-sm);
   }
@@ -320,17 +392,13 @@ a:hover {
     margin-bottom: var(--size-sm);
   }
 
-   .aboutPhoto {
+  .aboutPhoto {
     width: 60%;
     order: 2;
   }
 
-    .about p {
+  .about p {
     text-align: justify;
     order: 3;
   }
-
-
-
 }
-
