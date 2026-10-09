@@ -2,7 +2,7 @@ import { useLanguage } from "./LanguageContext";
 import translations from "../translations";
 
 function Services() {
-  const {language} = useLanguage();
+  const { language } = useLanguage();
   const t = translations[language];
 
   return (
@@ -21,6 +21,11 @@ function Services() {
             </li>
           ))}
         </ul>
+        <div className="servicesNotes">
+          <p className="servicesLocation">{t.services.location}</p>
+          <p className="servicesComment">{t.services.priceNote}</p>
+          <p className="servicesComment">{t.services.paymantNote}</p>
+        </div>
         <h3 className="sportsTitle">{t.services.sportsTitle}</h3>
         <div className="sportsList">
           {t.services.sports.map((sport) => (
@@ -30,9 +35,6 @@ function Services() {
             </details>
           ))}
         </div>
-
-      
-        <p className="servicesLocation">{t.services.location}</p>
       </div>
     </section>
   );

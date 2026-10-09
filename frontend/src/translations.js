@@ -21,6 +21,8 @@ const translations = {
       title: "Usługi",
       intro: "Każdy trening jest indywidualny - dopasowany do Ciebie i Twojego psa.",
       cta: "Umów się",
+      priceNote: "🗓️ Ceny obowiązują w 2026 roku i mogą ulec zmianie - aktualną cenę potwierdzę w wiadomości.",
+      paymantNote: "💳 Płatność gotówką lub BLIK.",
       location: "📍 Treningi odbywają się w Woli Karczewskiej.",
       sportsTitle: "Co trenujemy?",
       sports: [
@@ -56,6 +58,15 @@ const translations = {
         },
       ],
     },
+     contact: {
+      title: "Kontakt",
+      text: "Najszybciej złapiesz mnie na Instagramie - napisz wiadomość, a odpowiem i umówimy pierwsze spotkanie.",
+      cta: "Napisz na Instagramie",
+      mapTitle: "Gdzie trenujemy?",
+      instagramTitle: "Zajrzyj na Instagram",
+      instagramText: "Treningi, zawody i codzienność naszej drużyny.",
+      instagramCta: "Obserwuj na Instagramie", 
+    },
   },
   en: {
     nav: {
@@ -79,6 +90,8 @@ const translations = {
       title: "Services",
       intro: "Every session is one-to-one - tailored to you and your dog.",
       cta: "Book now",
+      priceNote: "🗓️ Prices valid for 2026 and subject to change - I'll confirm the current price when you message me.",
+      paymentNote:  "💳 Payment by cash or BLIK.",
       location: "📍 Training takes place in Wola Karczewska.",
       sportsTitle: "What do we train?",
       sports: [
@@ -114,7 +127,16 @@ const translations = {
         },
       ],
     },
-}
+      contact: {
+      title: "Contact",
+      text: "The quickest way to reach me is on Instagram – send me a message, I'll reply and we'll book your first meeting.",
+      cta: "Message me on Instagram",
+      mapTitle: "Where do we train?",
+      instagramCta: "Follow us on Instagram",
+      instagramTitle: "Find us on Instagram",
+       instagramText: "Training, competitions and everyday life of our team."
+    },
+  },
 };
 
 export default translations;

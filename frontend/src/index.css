@@ -339,7 +339,10 @@ a:hover {
   margin-bottom: var(--size-lg);
 }
 
-.servicesLocation {
+.servicesNotes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-xs);
   margin-top: var(--size-lg);
   color: var(--color-moss);
 }
@@ -379,6 +382,88 @@ a:hover {
 
 .sport p {
   padding-bottom: var(--size-sm);
+}
+
+.contactText {
+  font-size: var(--font-size-lg);
+  max-width: 600px;
+  margin: var(--size-sm) 0 var(--size-lg);
+}
+
+.contactColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.embed {
+  flex: 1;
+  width: 100%;
+  min-height: 300px;
+  border: 0;
+  border-radius: 16px;
+ 
+}
+
+.embed.map{
+  filter: grayscale(0.5);
+} 
+
+
+.embedTitle {
+  margin-bottom: var(--size-sm);
+}
+
+.igCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--size-md);
+  padding: var(--size-lg);
+  border: 2px solid var(--color-sage);
+  border-radius: 16px;
+}
+
+.igHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--size-sm);
+}
+
+.igAvatar {
+  width: 64px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  padding: 4px;
+  border: 2px solid var(--color-forest);
+  border-radius: 50%;
+}
+
+.igHandle {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-forest);
+}
+
+.contactEmbeds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--size-lg);
+  margin-top: var(--size-xl);
+}
+
+.igGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--size-xs);
+  width: 100%;
+}
+
+.igGrid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
